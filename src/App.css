@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  padding: 20px;
+  min-height: 100vh;
+  transition: all 0.3s ease;
+}
+
+.dark {
+  background: #1e1e1e;
+  color: white;
+}
+
+.light {
+  background: white;
+  color: black;
+}
+
+.top-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.editors {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.editor-box h3 {
+  text-align: center;
+}
+
+.preview {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background: white;
+}
+
+@media (max-width: 900px) {
+  .editors {
+    grid-template-columns: 1fr;
+  }
+}
